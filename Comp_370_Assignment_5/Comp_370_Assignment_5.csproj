@@ -32,8 +32,11 @@
     <Reference Include="System" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PersonID.cs" />
+    <Compile Include="PersonName.cs" />
+    <Compile Include="Sex.cs" />
+    <Compile Include="TestDriver.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>
