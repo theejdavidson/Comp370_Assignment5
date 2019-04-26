@@ -48,6 +48,18 @@ namespace Comp_370_Assignment_5
             Console.WriteLine("English name format: " + personNameTooLong.Ename());
             //surname returns as entered, prenames cut off entirely due to surname length
             Console.WriteLine("Prenames: " + personNameTooLong.Prenames() + "\nSurname: " + personNameTooLong.Surname());
+
+
+            Console.WriteLine("\nTesting Person Class\n--------------\n");
+            Person ethan = new Person();
+            Console.WriteLine("Default constructor info:\n");
+            Console.WriteLine("Name: " + ethan.personName + "\nSex: " + ethan.sex + "\nID: " + ethan.personID + "\nDate of Birth: " +ethan.dob);
+            Console.WriteLine("\nSetting person info...\n");
+            ethan.dob = new DateTime(1996, 09, 17);
+            ethan.personName = new PersonName("Davidson", "Ethan Joseph");
+            ethan.sex = Sex.male;
+            ethan.personID = new PersonID(123456789);
+            Console.WriteLine("Name: " + ethan.personName.Ename() + "\nSex: " + ethan.sex + "\nID: " + ethan.personID + "\nDate of Birth: " + ethan.dob);
             return;
         }
     }

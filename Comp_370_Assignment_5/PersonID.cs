@@ -2,8 +2,8 @@
 namespace Comp_370_Assignment_5
 {
     //Person Identifier class (assumes U.S. Social Security format)
-
-    struct PersonID
+    //Made ID public for ease od use in project scope
+    public struct PersonID
     {    //  Identifier for a person (U.S. Social Security version)
         int value;        //  Up to 999-99-9999 (one billion  minus 1)
 
@@ -23,6 +23,16 @@ namespace Comp_370_Assignment_5
                  + part2.ToString("D2") + "-"      //    on each subfield
                  + part3.ToString("D4");           //      as needed
 
+        }
+
+        public override bool Equals(object obj)
+        {
+            return base.Equals(obj);
+        }
+
+        public override int GetHashCode()
+        {
+            return base.GetHashCode();
         }
 
         //    Relational operators
